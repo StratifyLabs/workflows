@@ -2,15 +2,7 @@
 Checkout the tools-python repository for building and releasing python.
 """
 
-checkout.update_env(
-    rule = {"name": "update_env"},
-    env = {
-        "paths": ["/usr/bin", "/bin"],
-        "vars": {
-            "PS1": '"(spaces) $PS1"',
-        },
-    },
-)
+load("sysroot-packages/star/spaces_env.star", "spaces_working_env")
 
 checkout.add_repo(
     rule = {"name": "sl2"},
@@ -20,3 +12,5 @@ checkout.add_repo(
         "checkout": "Revision",
     },
 )
+
+spaces_working_env()
