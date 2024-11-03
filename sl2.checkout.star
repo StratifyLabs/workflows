@@ -2,7 +2,7 @@
 Checkout the tools-python repository for building and releasing python.
 """
 
-load("sysroot-packages/star/spaces_env.star", "spaces_working_env")
+load("spaces-starlark-sdk/star/spaces_env.star", "spaces_working_env")
 
 checkout.add_repo(
     rule = {"name": "sl2"},
