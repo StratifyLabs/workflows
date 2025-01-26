@@ -1,0 +1,6 @@
+# Workflow shortcuts
+#
+# For example: spaces checkout --workflow=workflows:sl2-locked --name=sl2-build
+
+sl2 = ["preload", "sl2"]
+sl2-locked = ["lock-sl2", "preload", "sl2"]
