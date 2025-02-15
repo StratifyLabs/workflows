@@ -7,7 +7,7 @@ checkout.add_repo(
     repo = {
         "url": "https://github.com/work-spaces/sdk",
         "rev": "main",
-        "checkout": "Revision",
+        "checkout": "Blobless",
         "clone": "Worktree"
     }
 )
@@ -17,7 +17,7 @@ checkout.add_repo(
     repo = {
         "url": "https://github.com/work-spaces/packages",
         "rev": "main",
-        "checkout": "Revision",
+        "checkout": "Blobless",
         "clone": "Worktree"
     }
 )
